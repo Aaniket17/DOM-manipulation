@@ -1,0 +1,60 @@
+body{
+    font-family: Arail, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin: 10px;
+}
+
+table {
+    margin: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1000px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+
+}
+
+th {
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+th.sortable:haver {
+    background-color: #ddd;
+
+}
+
+td input {
+    border: none;
+    width: 100%;
+}
+
+thead th.freeze, tbody tb.freeze{
+    position: sticky;
+    background: white;
+    z-index: 1;
+}
+
+thead th.freeze {
+    top: 0;
+}
+
+tbody td.freeze {
+    left: 0;
+}
